@@ -1,6 +1,5 @@
-# hanya_pemanis
-_______________
-# fitur crack
+#  Hanya Pemanis
+#  FItur Crack
 • crack from publik/friends
 
 • crack from followers
@@ -8,8 +7,7 @@ _______________
 • crack from reaction post
 
 • crack Instagram (via nama)
-_______________
-# installation
+#  Istallation
 $ pkg update && pkg upgrade 
 $ pkg install python2 
 $ pkg install git 
@@ -19,4 +17,5 @@ $ pip2 install -r bahan.dulu
 $ chmod +x people.py
 $ ls 
 $ python2 people.py
-# dahlah males
+_________________
+#  See You...
