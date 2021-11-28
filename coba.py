@@ -543,7 +543,7 @@ def crack2(user, pwx):
 					cepeh = "Checkpoint"
 					ingfo(user, pw, cepeh)
 					with open("cepeh.txt", "a") as simpan:
-						simpan.write(" [Checkpoint] nama: "+user+ sandi:" • "+pw+"\n")
+						simpan.write(" [Checkpoint] "+user+" • "+pw+"\n")
 					cp.append(user)
 					break
 				elif "userId" in str(data):
@@ -551,7 +551,7 @@ def crack2(user, pwx):
 					if len(status_foll) != 1:
 						ingfo(user, pw, okeh)
 						with open("okeh.txt", "a")as simpan:
-							simpan.write(" [Berhasil] nama: "+user+ sandi:" • "+pw+"\n")
+							simpan.write(" [Berhasil] "+user+" • "+pw+"\n")
 						ok.append(user)
 						#follow(ses,user)
 					break
